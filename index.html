@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component-Library</title>
+    <link href="styles.css" rel="stylesheet" >
 </head>
 <body>
     
@@ -18,7 +19,7 @@
     <h1>this  is the biggest heading</h1>
     <h2>this is the second biggest heading</h2>
     <h3>this is the third biggest heading</h3>
-    <p>this is p tag</p>
+    <p>this is paragraph is having a <strong>bold</strong> text.</p>
     <small>this is small tag</small>
 
     <hr>
@@ -26,56 +27,57 @@
     <h2>#container</h2>
 
     <h3>fluid container</h3>
-    <div>this is a going to be a fluid container. it will go full width of the page with some margin. </div>
+    <div class="container">this is a going to be a fluid container. it will go full width of the page with some margin. </div>
 
     <h3>center container</h3>
-    <div>this is a center container and it will go till a given width and center content.</div>
+    <div class="container center-container">this is a center container and it will go till a given width and center content.</div>
 
     <hr>
 
     <h2>#links</h2>
 
-    <a href="/">primary link</a>
-    <a href="/">secondary link</a>
+    <a href="/" class="link link-primary">primary link</a>
+    <a href="/" class="link link-secondary">secondary link</a>
 
     <hr>
 
     <h2>#lists</h2>
 
     <h3>unordered list</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>itemOne</li>
         <li>itenTwo</li>
         <li>itemThree</li>
     </ul>
 
     <h3> unordered inline list</h3>
-    <ul>
-        <li>inline itemOne</li>
-        <li>inline itenTwo</li>
-        <li>inline itemThree</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">inline itemOne</li>
+        <li class="list-item-inline">inline itemTwo</li>
+        <li class="list-item-inline">inline itemThree</li>
     </ul>
 
     <h3>reversed ordered list</h3>    
-    <ol>
+    <ol reversed>
         <li>itemOne</li>
         <li>itenTwo</li>
         <li>itemThree</li>
     </ol>
 
     <hr>
+    <h2>#navigation</h2>
 
-    <nav>
-        <div>iAmDeveloper</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmDeveloper</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">projects</a>
             </li>
-            <li>
-                <a href="/">blogs</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">blogs</a>
             </li>
         </ul>
     </nav>
@@ -84,41 +86,54 @@
 
     <h2>#header</h2>
 
-    <header>
-        <img src= "/images/hero.svg" />
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-image" src= "/images/hero.svg" />
+        <h1 class="hero-heading">heading inside hero</h1>
     </header>
 
     <hr>
 
     <h2>#section</h2>
 
-    <section>
-        <h3>white section</h3>
-        <p>this section will have a white background.</p>
+    <section class="section">
+        <div class="center-container">
+            <h1>white section</h1>
+        <p>The history of political blogging might usefully be divided into the periods pre- and post-Huffington. Before the millionaire socialite Arianna Huffington decided to get in on the act, bloggers operated in a spirit of underdog solidarity. They hated the mainstream media - and the feeling was mutual.</p>
+        </div>
+        
     </section>
-    <section>
-        <h3>off-white section</h3>
-        <p>this section will have a off-white background.</p>
+    <section class="section ow">
+        <div class="center-container">
+            <h1>off-white section</h1>
+        <p>The history of political blogging might usefully be divided into the periods pre- and post-Huffington. Before the millionaire socialite Arianna Huffington decided to get in on the act, bloggers operated in a spirit of underdog solidarity. They hated the mainstream media - and the feeling was mutual.</p>
+        </div>
+        
     </section>
 
     <hr>
 
     <h2>#footer</h2>
 
-    <footer>
-        <div>some small headings inside footer</div>
+    <footer class="footer">
+        <div class="footer-header">some small headings inside footer</div>
         <ul>
-            <li>socialONE</li>
-            <li>socialTWO</li>
-            <li>socialTHREE</li>
+            <li class="list-item-inline list-non-bullet">
+                <a class="link" href="/">
+                    socialONE
+                </a>
+            </li>
+            <li class="list-item-inline list-non-bullet">
+                <a class="link" href="/">
+                socialTWO
+            </a>
+            </li>
+            <li class="list-item-inline list-non-bullet">
+                <a class="link" href="/">
+                socialTHREE
+            </a>
+            </li>
         </ul>
     </footer>
 
-
-
-
-
-    <div style="height : 20vh"></div>
 </body>
 </html>
